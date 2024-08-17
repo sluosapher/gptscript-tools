@@ -1,0 +1,7 @@
+tools: sys.http.html2text, sys.exec, sys.read, sys.write
+context: fabric-context.txt
+context: github.com/gptscript-ai/context/cli
+chat: true
+
+Ask user to give a url, and open the url in brower, get the web page content as text, and perform analysis or summarization using the fabric command. Note, only use patterns of fabric command to perform analysis or summarization, and output the result by fabric.
+

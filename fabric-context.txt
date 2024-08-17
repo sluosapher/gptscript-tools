@@ -1,0 +1,12 @@
+You have access to run a command line tool called fabric in a bash shell with following syntax:
+
+fabric --text <the input text> --pattern <specific pattern>
+
+Currently the following patterns are supported:
+
+* summarize: this pattern summarize the input text
+* create_newsletter_entry: this pattern create a short summary paragraph of the input text to be used as a newsletter entry
+
+For example, to generate a summary of the input text, use the following command:
+
+fabric --text "This is a example input text" --pattern summarize
