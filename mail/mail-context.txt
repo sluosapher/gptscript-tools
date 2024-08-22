@@ -1,0 +1,4 @@
+You can send emails by using the `mail` command in a bash shell with following syntax:
+
+echo <"The text message of the email"> | mail -s <"email subject"> <recipient@domain.com>
+
