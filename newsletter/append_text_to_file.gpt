@@ -1,0 +1,8 @@
+Name: append_text_to_file
+Description: append text content to the end of a fil
+Tools: sys.exec
+Param: input_text: the text content to be appended
+#Param: file_path: the file location
+Chat: false
+
+Call the shell command "echo $input_text >> $GPTSCRIPT_WORKSPACE/newsletter.md"

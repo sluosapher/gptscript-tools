@@ -1,0 +1,9 @@
+Name: get_article_text
+Description: get the text content of the main article of a web page at a given hyperlink url
+Tools: github.com/gptscript-ai/browser
+Args: url: HTTPS URL of a page
+Chat: false
+
+Return the original full text content of the main article of the page. Discard content of formatting, advertisements, links to other sections, and othe irrelevant parts.
+
+

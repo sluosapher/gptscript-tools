@@ -1,7 +1,10 @@
-tools: sys.http.html2text, sys.exec, sys.read, sys.write
+tools: append_text_to_file.gpt, ../web/get_article_text.gpt
+tools: sys.exec, sys.read, sys.write
 context: ../fabric/fabric-context.txt
-context: github.com/gptscript-ai/context/cli
-chat: true
+args: url: the hyberlink to the web page
+chat: false
 
-Ask user to give a url, get the text content of its page, and generate a newsletter entry using the fabric command. 
-At last, append a line of "Source <url>" to the end of fabric output.
+Instructions:
+1. Given an url, get the text of the main article of the page.
+2. Generate a newsletter entry using the fabric command, and append a line of "[Link to the source] (<url>)\n\n" to the end of fabric output.
+3. Call tool append_text_to_file to save the output of step 2 into the user's file
