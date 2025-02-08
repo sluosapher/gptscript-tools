@@ -1,0 +1,9 @@
+Name: receive_email
+Description: receive the unread emails from associated gmail account
+Tools: sys.exec
+Param: email_addresses: one or more senders' email addresses seperated by commas.
+Param: newer_than_days: the number of days to look back for new emails. Use 0 to receive emails of all time. 
+Param: retrieval_count: is the number of emails to retrieve. Use 0 to retrieve all emails.
+Chat: false
+
+Call the shell command "/Users/sluo/development/gptscript-tools/gmail/receive_email.sh $email_addresses $newer_than_days $retrieval_count"

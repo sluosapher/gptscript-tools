@@ -20,6 +20,13 @@ def receive_new_email(senders:list, days:int, retrieve:int=1)->list[GmailMessage
     - days: 0 or positive interger. number of days to look back for new emails. If 0, all emails of all time will be received.
     - retrieve: 0 or positive interger. number of emails to retrieve. If 0, all emails will be received.
     '''
+    # print out all parameters
+    print("in Python function receive_new_email")
+    print(f"senders: {senders}")
+    print(f"days: {days}")
+    print(f"retrieve: {retrieve}")
+
+
     # check if days is a non-negative integer
     if not isinstance(days, int) or days < 0:
         raise ValueError("days should be a non-negative integer.")
